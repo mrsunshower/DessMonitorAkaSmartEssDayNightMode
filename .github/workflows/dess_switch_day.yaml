@@ -1,0 +1,27 @@
+name: Dess Monitor Mode Switch
+
+on:
+  schedule:
+    - cron: '0 10 * * *'  # triggers daily at 07:00 UTC
+  workflow_dispatch:
+
+jobs:
+  switch-mode:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Run switch script
+      env:
+        DESS_USER: ${{ secrets.DESS_USER }}
+        DESS_PASS: ${{ secrets.DESS_PASS }}
+        DESS_COMPANY_KEY: ${{ secrets.DESS_COMPANY_KEY }}
+        DEVICE_PN: ${{ secrets.DEVICE_PN }}
+        DEVICE_SN: ${{ secrets.DEVICE_SN }}
+        DEVICE_CODE: ${{ secrets.DEVICE_CODE }}
+        DEVICE_ADDR: ${{ secrets.DEVICE_ADDR }}
+      run: |
+        chmod +x dess_mode_switch.sh
+        ./dess_mode_switch.sh day
