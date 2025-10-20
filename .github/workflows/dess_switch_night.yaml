@@ -1,4 +1,4 @@
-name: Dess Monitor Mode Switch
+name: Dess Monitor Night Switch
 
 on:
   schedule:
