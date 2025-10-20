@@ -2,13 +2,13 @@
 
 # -------- Configuration --------
 # Replace these values only if running locally and not using GitHub Actions
-DESS_USER="your_dess_login"
-DESS_PASS="your_dess_pass"
-DESS_COMPANY_KEY="your_company_key"
-DEVICE_PN="your_pn"
-DEVICE_SN="your_sn"
-DEVICE_CODE="your_device_code"
-DEVICE_ADDR="your_device_addr"
+# DESS_USER="your_dess_login"
+# DESS_PASS="your_dess_pass"
+# DESS_COMPANY_KEY="your_company_key"
+# DEVICE_PN="your_pn"
+# DEVICE_SN="your_sn"
+# DEVICE_CODE="your_device_code"
+# DEVICE_ADDR="your_device_addr"
 
 # Function to calculate SHA1 hash of input string
 sha1() {
