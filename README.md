@@ -15,7 +15,7 @@ Fill the following parameters precisely:
 
 - `DESS_USER`: Your Dess Monitor/SmartEss login.
 - `DESS_PASS`: Your Dess Monitor/SmartEss password.
-- `DESS_COMPANY_KEY`: How to find it: Open Developer Tools in your browser (usually by pressing F12). Log in to the https://www.dess-monitor-day-night-mode-switch.com﻿ website using your credentials. Go to the Network tab, filter requests by authSource. Find the URL that contains company-key= and copy that value.
+- `DESS_COMPANY_KEY`: How to find it: Open Developer Tools in your browser (usually by pressing F12). Log in to the https://www.dessmonitor.com﻿ website using your credentials. Go to the Network tab, filter requests by authSource. Find the URL that contains company-key= and copy that value.
 - Device parameters (`DEVICE_PN`, `DEVICE_SN`, `DEVICE_CODE`, `DEVICE_ADDR`): All available in the **Device Info** tab of your Dess Monitor app or web portal.
 
 ## How to Use
@@ -57,7 +57,7 @@ Add tasks
 Store sensitive data (login, password, company key, device parameters) as **GitHub Secrets** and inject them as environment variables.
 
 #### Automating with GitHub Actions
-Check
+Check and update the appropriate cron schedules
 - .github/workflows/dess_switch_day.yaml
 - .github/workflows/dess_switch_night.yaml
 
