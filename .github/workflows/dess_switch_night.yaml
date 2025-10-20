@@ -2,7 +2,7 @@ name: Dess Monitor Mode Switch
 
 on:
   schedule:
-    - cron: '0 2 40 * *'  # triggers daily at 23:00 UTC
+    - cron: '0 2 * * *'  # triggers daily at 23:00 UTC
   workflow_dispatch:
 
 jobs:
